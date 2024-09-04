@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigistration Form</title>
+    <style>
+      form {
+        border-left: 350px solid#f1f1f1;
+        border-right: 350px solid #f1f1f1;
+        background-color: rgb(103, 187, 212);
+      }
+      .container {
+        padding: 16px;
+      }
+      .submit {
+        margin-left: 200px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1 style="text-align: center">Sample Rigistration Form</h1>
+
+        <label for="fullname">Student Image:</label>
+        <input type="file" name="studentimage" id="studentimage" /><br /><br />
+
+        <label for="fullname">Student Name:</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Full Name"
+          required
+        /><br /><br />
+
+        <label for="username">Father's Name:</label>
+        <input
+          type="text"
+          name="username"
+          id="fathersname"
+          placeholder="Father's Full Name"
+          required
+        /><br /><br />
+
+        <label for="username">Mother's Name:</label>
+        <input
+          type="text"
+          name="username"
+          id="mothersname"
+          placeholder="Mother's Full Name"
+          required
+        /><br /><br />
+
+        <p>Choose Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other ">Other</label>
+        <br /><br />
+        <p>Chose your skills:</p>
+        <input type="checkbox" id="skill1" name="skill1" value="linux" />
+        <label for="skill1">LINUX</label><br />
+
+        <input type="checkbox" id="skill2" name="skill2" value="html" />
+        <label for="skill2">HTML</label><br />
+
+        <input type="checkbox" id="skill3" name="skill3" value="aws" />
+        <label for="skill3">AWS</label><br /><br />
+
+        <label for="DOB"><strong>Date Of Birth:</strong> </label>
+        <input type="date" name="DOB" id="DOB" required /><br /><br />
+        <label for="email"><strong>E-mail:</strong></label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="abc@gmail.com"
+          required
+        /><br /><br />
+        <label for="level"><strong>Studying Level:</strong> </label>
+        <select name="level" id="level">
+          <option value="highschool">Mpp School</option>
+          <option value="highschool">Highschool</option>
+          <option value="highschool">Ug</option>
+          <option value="highschool">Master</option></select
+        ><br /><br />
+        <label for="department"><strong>Department:</strong></label>
+        <select name="department" id="department">
+          <option value="electrical">Electrical Engineering</option>
+          <option value="electrical">Computer Engineering</option>
+          <option value="electrical">Software Engineering</option>
+          <option value="electrical">Civil Engineering</option></select
+        ><br /><br />
+
+        <label for="phonenumber"><strong>Mobile:</strong></label>
+        <input
+          type="tel"
+          name="phonenumber"
+          id="phonenumber"
+          placeholder="XXX XXX XXXX"
+          required
+        />
+        <hr />
+        <h3>Permanent Address</h3>
+        <label for="pstate">State:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="text"
+          name="pstate"
+          id="pstate"
+          placeholder="State"
+          required
+        />&nbsp;&nbsp;&nbsp;
+        <label for="pcity">City:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="text"
+          name="pcity"
+          id="pcity"
+          placeholder="City"
+          required
+        /><br /><br />
+        <label for="pzip">Zip Code:</label>
+        <input
+          type="number"
+          name="pzip"
+          id="pzip"
+          placeholder="Zip Code"
+          required
+        />&nbsp;&nbsp;&nbsp;
+        <label for="pphonenumber">Tel/Mobile:</label>
+        <input
+          type="tel"
+          name="pphonenumber"
+          id="pphonenumber"
+          placeholder="XXX XXX XXXX"
+          required
+        />
+        <hr />
+        <h3>Temporary Address</h3>
+        <label for="sameaspermanent"
+          ><strong> Same As Permanent Address:</strong></label
+        >
+        <input
+          type="checkbox"
+          name="sameaspermanent"
+          id="sameaspermanent"
+        /><br /><br />
+        <label for="tstate">State:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="text"
+          name="tstate"
+          id="tstate"
+          placeholder="State"
+          required
+        />&nbsp;&nbsp;&nbsp;
+        <label for="tcity">City:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="text"
+          name="tcity"
+          id="tcity"
+          placeholder="City"
+          required
+        /><br /><br />
+        <label for="tzip">Zip Code:</label>
+        <input
+          type="number"
+          name="tzip"
+          id="tzip"
+          placeholder="Zip Code"
+          required
+        />&nbsp;&nbsp;&nbsp;
+        <label for="tphonenumber">Tel/Mobile:</label>
+        <input
+          type="tel"
+          name="tphonenumber"
+          id="tphonenumber"
+          placeholder="XXX XXX XXXX"
+          required
+        /><br /><br />
+        <div class="submit">
+          <button class="register" type="submit" style="width: 100px">
+            Register</button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
